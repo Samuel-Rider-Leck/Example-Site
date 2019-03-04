@@ -1,15 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 class Header extends React.Component {
   render() {
     return(
       <nav>
         <img alt="Example Site"></img>
-        <a href="/">Link 1</a>
-        <a href="/">Link 2</a>
-        <a href="/">Link 3</a>
-        <a href="/">Link 4</a>
-        <a href="/">Action Button</a>
+        <Link to="/">Link 1</Link>
+        <Link to="/">Link 2</Link>
+        <Link to="/">Link 3</Link>
+        <Link to="/">Link 4</Link>
+        <Link to="/">Action Button</Link>
       </nav>
     )
   }
