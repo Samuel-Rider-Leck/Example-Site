@@ -23,7 +23,7 @@ class Main extends React.Component {
           <img alt="Small Icon 2"></img>
           <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisl nisi, eleifend vel nisl eu, scelerisque varius metus.</div>
           <img alt="Small Icon 3"></img>
-          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac purus ultrices, ultrices velit nec, dictum metus.</div>
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac purus ultrices, ultrices velit nec, dictum metus.</div>
         </div>
         <div>
           <h3>Feature 1</h3>
