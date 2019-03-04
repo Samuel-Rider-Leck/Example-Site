@@ -1,6 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+const post_array = [
+  {id:1,name:"Post 1",short:"Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
+  {id:2,name:"Post 2",short:"Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
+  {id:3,name:"Post 3",short:"Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
+  {id:4,name:"Post 4",short:"Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
+  {id:5,name:"Post 5",short:"Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
+  {id:6,name:"Post 6",short:"Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
+  {id:7,name:"Post 7",short:"Lorem ipsum dolor sit amet, consectetur adipiscing elit."},
+]
+
 class Category extends React.Component {
   render() {
     return(
@@ -14,41 +24,14 @@ class Category extends React.Component {
           <button type='radio' radioGroup='radio'>Product Updates</button>
         </div>
         <div>
-          <div>
-            <h2>Post 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <Link to="/blog/post">Read More</Link>
-          </div>
-          <div>
-            <h2>Post 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <Link to="/blog/post">Read More</Link>
-          </div>
-          <div>
-            <h2>Post 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <Link to="/blog/post">Read More</Link>
-          </div>
-          <div>
-            <h2>Post 4</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <Link to="/blog/post">Read More</Link>
-          </div>
-          <div>
-            <h2>Post 5</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <Link to="/blog/post">Read More</Link>
-          </div>
-          <div>
-            <h2>Post 6</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <Link to="/blog/post">Read More</Link>
-          </div>
-          <div>
-            <h2>Post 7</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <Link to="/blog/post">Read More</Link>
-          </div>
+        {post_array.map(
+          ({id, name, short}) =>
+          (<div id={id}>
+            <h2>{name}</h2>
+            <p>{short}</p>
+            <Link to={"/blog/post/"+id}>Read More</Link>
+          </div>)
+        )}
         </div>
       </div>
     )
