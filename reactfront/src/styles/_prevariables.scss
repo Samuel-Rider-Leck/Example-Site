@@ -1,0 +1,8 @@
+// Spacers (extending bootstrap)
+
+$spacer: 1rem;
+$spacers: (
+  6: ($spacer * 5),
+  7: ($spacer * 7.5),
+  8: ($spacer * 10)
+);
